@@ -42,6 +42,7 @@ with graph.as_default():
                   "images/vkuswill.jpg", "images/vkuswill.jpg",
                   "images/vkuswill.jpg",
                   ]
+        images = ['images/5.jpg', 'images/30.jpg']                   
         while True:
             i += 1
             # im = prepare_image(images[i % 2], image_shape)
