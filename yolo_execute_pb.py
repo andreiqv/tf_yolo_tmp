@@ -52,8 +52,8 @@ with graph.as_default():
             start = time.time()
             out = sess.run(net_out.outputs[0], feed_dict={net_inp.outputs[0]: ims})
 
-            # out = non_maxima_suppression(out, 0.2, 0.4)
-            # print(out)
+            out = non_maxima_suppression(out, 0.2, 0.4)
+            print(out)
 
             end = time.time()
             print("fps:", len(images) / (end - start))
